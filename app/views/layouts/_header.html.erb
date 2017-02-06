@@ -1,0 +1,278 @@
+
+<div class="outer_container">
+
+
+	<div class="header">
+	
+	<div class="container">
+	
+		<div class="header_top">
+			
+			<div class="header_contact">
+        <%=image_tag ("phone_icon.png"), :class => "contact_logo"  %><a class="contact_link" href="tel:+#">1-800-264-5437</a>
+        <%=image_tag ("email_icon.png"), :class => "contact_logo"  %><a class="contact_link" href="mailto:#">contact@cognotiongames.com</a>
+			</div><!--END header_contact--> 
+			<div class="header_social">
+				<a href="#"><%=image_tag ("pinterest_grey.png"), :class => "social original right"  %><%=image_tag ("pinterest.png"), :class => "social color right"  %></a>
+				<a href="#"><%=image_tag ("instagram_grey.png"), :class => "social original"  %><%=image_tag ("instagram.png"), :class => "social color"  %></a>
+				<a href="#"><%=image_tag ("twitter_grey.png"), :class => "social original"  %><%=image_tag ("twitter.png"), :class => "social color"  %></a>
+				<a href="#"><%=image_tag ("facebook_grey.png"), :class => "social original"  %><%=image_tag ("facebook.png"), :class => "social color"  %></a>
+			</div><!--END header_social--> 
+							
+		</div><!--END header_top--> 
+				
+<div class="clear"></div>
+
+		<div class="main_nav">
+			<a href="/"><%=image_tag ("logo.png"), :class => "logo"  %></a>
+			<ul class="nav">
+				<li id="login">Sign In</li>
+				<li id="menu">Menu</li>
+			</ul><!--END nav-->
+		</div><!--END main_nav--> 
+		
+<div class="clear"></div>
+
+			<div class="hello">
+				<p id="demo"></p>
+				<p>Hello,</p>
+			</div>
+			
+			<?php if($title=='iPhone') { echo 'class="current"'; } ?>
+	
+		<div class="secondary_nav">
+			<ul class="nav_one">
+				<li <?php if($title=='Not Just Another Cog') { echo 'class="current"'; } ?>><a href="index.php">Home</a></li>
+				<li <?php if($title=='About Us') { echo 'class="current"'; } ?>><a href="about.php">About Us</a></li>
+				<li><a href="about.php#non-profits" class="footer_title">Non-Profit Sponsorships</a></li>
+			</ul><!--END nav_one--> 
+			<ul class="nav_two">
+				<li <?php if($title=='Learning Styles') { echo 'class="current"'; } ?>><a href="learning.php">Learning Styles</a></li>
+				<li <?php if($title=='Our Games') { echo 'class="current"'; } ?>><a href="games.php">All Games</a></li>
+				<li <?php if($title=='Candyland') { echo 'class="current"'; } ?>><a href="candyland.php">Customizable Games</a></li>
+			</ul><!--END nav_two--> 
+			<ul class="nav_three">
+				<li><a href="#">My Cart</a></li>
+				<li><a href="#">Checkout</a></li>
+				<li <?php if($title=='Contact Us') { echo 'class="current"'; } ?>><a href="contact.php">Contact Us</a></li>
+					<!--<li id="close"><a href="#">[ close ]</a></li>-->
+			</ul><!--END nav_three--> 	
+		</div><!--END secondary_nav--> 
+		
+		<div class="sign_in">
+			<form class="user">
+				<div class="form1">
+					<p>Username</p>
+					<input type="text" id="username" name="username">
+				</div>
+				<div class="form1">
+					<p>Password</p>
+					<input type="password" name="password">
+				</div>
+				<div onclick="myFunction()" class="submit_form1">Sign In</div>
+			</form>	
+			<p class="new_user">New User?</p>
+		</div><!--END sign_in--> 
+		
+	<div class="clear"></div>
+	
+			
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("username").value;
+    document.getElementById("demo").innerHTML = x;
+}
+function myFunction2() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+
+		
+	</div><!--END container--> 
+	
+	</div><!--END header--> 
+	
+<a name="top"></a><div class="block"></div>
+
+			<div class="register">
+					<form class="register_user">
+						<div class="form2">
+							<p>First Name</p><br>
+							<input type="text" id="myText" name="firstname">
+						</div>
+						<div class="form2">
+							<p>Last Name</p><br>
+							<input type="text" name="lastname">
+						</div>
+						<div class="form2">
+							<p>Phone Number</p><br>
+							<input type="tel" name="phone">
+						</div>
+						<div class="form2">
+							<p>Email</p><br>
+							<input type="email" name="email">
+						</div>
+						<div class="form2">
+							<p>Address</p><br>
+							<input class="address2" type="text" name="address">
+						</div>
+						<div class="form2">
+							<p>City</p><br>
+							<input type="text" name="city">
+						</div>
+						<div class="address">
+							<p>State</p><br>
+							<input type="text" name="state" min="2" max="2">
+						</div>
+						<div class="address">
+							<p>Zipcode</p><br>
+							<input type="text" name="zip" min="1" max="5">
+						</div>
+						<div class="form2">
+							<p>Username</p><br>
+							<input type="text" name="user">
+						</div>
+						<div class="form2">
+							<p>Password</p><br>
+							<input type="password" name="pass">
+						</div>
+						<div class="clear"></div>
+						
+						<div class="special">
+							<p>Receive Weekly Emails</p>
+							<input type="checkbox" name="weeklyemail">
+						</div>
+						<div class="special">
+							<p>Receive Special Promotions</p>
+							<input type="checkbox" name="promotions">
+						</div>
+						
+						<div class="clear"></div>
+						
+					<div onclick="myFunction2()" class="submit_user">Register Now!</div>
+
+					</form><!--END register_user--> 
+						
+				<div class="clear"></div>
+
+					<div class="close_tab3">Close</div>
+				</div><!--END register--> 
+				
+			<div class="email_list">
+					<form class="emailing">
+						<div class="form2">
+							<p>First Name</p><br>
+							<input type="text" id="myText" name="firstname">
+						</div>
+						<div class="form2">
+							<p>Last Name</p><br>
+							<input type="text" name="lastname">
+						</div>
+						<div class="form2">
+							<p>Email</p><br>
+							<input class="address2" type="email" name="email">
+						</div>
+						<div class="form2">
+							<p>What is your child's learning style?</p><br>
+							<div class="style_options">
+								<span><input type="checkbox" name="visual">Visual</span> 					
+								<span><input type="checkbox" name="auditory">Auditory</span> 	
+								<span><input type="checkbox" name="kinesthetic">Kinesthetic</span> 					
+								<span><input type="checkbox" name="other">Other</span> 					
+							</div>
+						</div>
+						<div class="form2">
+							<p>When is your child's birthday?</p><br>
+							<div class="birth_month">
+								<select class="month">
+  									<option value="volvo">Select a Month</option>
+  									<option value="saab">January</option>
+  									<option value="volvo">February</option>
+  									<option value="saab">March</option>
+  									<option value="volvo">April</option>
+  									<option value="saab">May</option>
+  									<option value="mercedes">June</option>
+  									<option value="audi">July</option>
+  									<option value="volvo">August</option>
+  									<option value="saab">September</option>
+  									<option value="volvo">October</option>
+  									<option value="saab">November</option>
+  									<option value="saab">December</option>
+								</select>
+								<select class="day">
+  									<option value="volvo">Select a Day</option>
+  									<option value="saab">1</option>
+  									<option value="volvo">2</option>
+  									<option value="saab">3</option>
+  									<option value="volvo">4</option>
+  									<option value="saab">5</option>
+  									<option value="mercedes">6</option>
+  									<option value="audi">7</option>
+  									<option value="volvo">8</option>
+  									<option value="saab">9</option>
+  									<option value="volvo">10</option>
+  									<option value="saab">11</option>
+  									<option value="volvo">12</option>
+  									<option value="saab">13</option>
+  									<option value="volvo">14</option>
+  									<option value="saab">15</option>
+  									<option value="mercedes">16</option>
+  									<option value="audi">17</option>
+  									<option value="volvo">18</option>
+  									<option value="saab">19</option>
+  									<option value="volvo">20</option>
+  									<option value="saab">21</option>
+  									<option value="volvo">22</option>
+  									<option value="saab">23</option>
+  									<option value="volvo">24</option>
+  									<option value="saab">25</option>
+  									<option value="mercedes">26</option>
+  									<option value="audi">27</option>
+  									<option value="volvo">28</option>
+  									<option value="saab">29</option>
+  									<option value="volvo">30</option>
+  									<option value="volvo">31</option>
+								</select>
+							</div>
+						</div>		
+						
+						<div class="special">
+							<p>Receive Weekly Emails</p>
+							<input type="checkbox" name="weeklyemail">
+						</div>
+						<div class="special">
+							<p>Receive Monthly Newsletters</p>
+							<input type="checkbox" name="monthlyemail">
+						</div>
+						<div class="special">
+							<p>Learn About New Games</p>
+							<input type="checkbox" name="games">
+						</div>
+						<div class="special">
+							<p>Receive Special Promotions</p>
+							<input type="checkbox" name="promotions">
+						</div>
+						<div class="special">
+							<p>Receive Birthday Coupons</p>
+							<input type="checkbox" name="birthday">
+						</div>
+						
+						<div class="clear"></div>
+						
+					<div class="submit_user2">Sign Up Now!</div>
+
+					</form><!--END emailing--> 
+											
+				<div class="clear"></div>
+
+					<div class="close_tab4">Close</div>
+				</div><!--END email--> 
+				
+					
+
+<div class="overlay"></div>
+
