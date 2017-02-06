@@ -42,19 +42,19 @@
 	
 		<div class="secondary_nav">
 			<ul class="nav_one">
-				<li <?php if($title=='Not Just Another Cog') { echo 'class="current"'; } ?>><a href="index.php">Home</a></li>
-				<li <?php if($title=='About Us') { echo 'class="current"'; } ?>><a href="about.php">About Us</a></li>
-				<li><a href="about.php#non-profits" class="footer_title">Non-Profit Sponsorships</a></li>
+				<li><a href="index"><%= link_to "Home", home_path, :class => current_class?(home_path)  %></a></li>
+				<li><a href="about"><%= link_to "About Us", about_path, :class => current_class?(about_path)  %></a></li>
+				<li><a href="about#non-profits" class="footer_title">Non-Profit Sponsorships</a></li>
 			</ul><!--END nav_one--> 
 			<ul class="nav_two">
-				<li <?php if($title=='Learning Styles') { echo 'class="current"'; } ?>><a href="learning.php">Learning Styles</a></li>
-				<li <?php if($title=='Our Games') { echo 'class="current"'; } ?>><a href="games.php">All Games</a></li>
-				<li <?php if($title=='Candyland') { echo 'class="current"'; } ?>><a href="candyland.php">Customizable Games</a></li>
+				<li><a href="learning"><%= link_to "Learning Styles", learning_path, :class => current_class?(learning_path)  %></a></li>
+				<li><a href="games"><%= link_to "All Games", games_path, :class => current_class?(games_path)  %></a></li>
+				<li><a href="candyland"><%= link_to "Customizable Games", candyland_path, :class => current_class?(candyland_path)  %></a></li>
 			</ul><!--END nav_two--> 
 			<ul class="nav_three">
 				<li><a href="#">My Cart</a></li>
 				<li><a href="#">Checkout</a></li>
-				<li <?php if($title=='Contact Us') { echo 'class="current"'; } ?>><a href="contact.php">Contact Us</a></li>
+				<li><a href="contact.php"><%= link_to "Contact Us", contact_path, :class => current_class?(contact_path)  %></a></li>
 					<!--<li id="close"><a href="#">[ close ]</a></li>-->
 			</ul><!--END nav_three--> 	
 		</div><!--END secondary_nav--> 
