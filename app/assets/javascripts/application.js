@@ -15,9 +15,11 @@
 //= require lib/modernizr-2.6.2.min
 //= require lib/plugins
 //= require lib/underscore
-//= require home
-//= require index
+
 //= require jquery/jquery.bxslider.js
 //= require jquery/jquery.bxslider.min.js
 //= require jquery/plugins/jquery.easing.1.3.js
 //= require jquery/plugins/jquery.fitvids.js
+
+//= require home
+//= require index
